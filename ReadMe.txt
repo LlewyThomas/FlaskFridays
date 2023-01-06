@@ -62,3 +62,11 @@ $ git push -u origin main
 $ git add .
 $ git commit -am 'Update Description'
 $ git push
+
+----------------- Bootstrap -----------------
+https://getbootstrap.com/docs/5.3/getting-started/introduction/#quick-start
+
+instert 'quick start' code into base.html file
+create a div with class container and instert {% block content %} ect.  into the html body
+
+for a var bar it is recommended to create a navbar.html file and use a {% inculde 'navbar.hmtl' %} in base.html
