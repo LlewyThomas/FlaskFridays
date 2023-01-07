@@ -87,3 +87,33 @@ app.config['SECRET_KEY'] = ""
 ----------------- Flask pop up messages -----------------
 from flask import flash
 flash messages do not have to be passed to the render_template() method
+
+----------------- SQLAlchemy -----------------
+In terminal:
+$ pip install flask-sqlalchemy
+In Flask app file:
+...
+from flask_sqlalchemy import SQLAlchemy
+...
+
+to add database to app:
+...
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+...
+" URI - Uniform Resourse Indicator - leads to where database is"
+- starting with SQLlite
+
+# Create Model for Database
+...
+
+To create/ initialize the data base:
+Python Interpter in Git Bash terminal:
+$ winpty py
+>>> from hello import app, db
+>>> app.app_context().push()
+>>> db.create_all()
+>>> exit()
+
+Then create a form class in the python app
+Then create route and a function
+...
