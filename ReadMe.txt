@@ -70,3 +70,20 @@ instert 'quick start' code into base.html file
 create a div with class container and instert {% block content %} ect.  into the html body
 
 for a var bar it is recommended to create a navbar.html file and use a {% inculde 'navbar.hmtl' %} in base.html
+
+
+----------------- What The Forms -----------------
+https://flask-wtf.readthedocs.io/
+$ pip install flask-wtf
+make sure a bunch of methods is imported into the python file
+...
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField
+from wtforms.validators import DataRequired
+
+Creat a secret key (CSRF Token)
+app.config['SECRET_KEY'] = ""
+
+----------------- Flask pop up messages -----------------
+from flask import flash
+flash messages do not have to be passed to the render_template() method
